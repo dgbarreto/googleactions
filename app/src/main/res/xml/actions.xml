@@ -1,0 +1,10 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<actions>
+    <action intentName="actions.intent.GET_THING">
+        <fulfillment urlTemplate="https://starwars.characters.com/bio{?character}">
+            <parameter-mapping
+                intentParameter="thing.name"
+                urlParameter="character"/>
+        </fulfillment>
+    </action>
+</actions>
